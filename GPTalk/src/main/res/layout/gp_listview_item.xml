@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/ivListProfilePic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/tvListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivListProfilePic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/normalTextColor"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/tvListFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvListTitle"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/normalTextColor"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/tvListLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvListFirstName"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/normalTextColor"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/tvListAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvListFirstName"
+        android:layout_toRightOf="@+id/ivListProfilePic"
+        android:paddingLeft="10dp"
+        android:textColor="@color/secondaryListColor"
+        android:maxLength="20"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvListCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvListFirstName"
+        android:layout_toRightOf="@+id/tvListAddress"
+        android:paddingLeft="10dp"
+        android:textColor="@color/secondaryListColor"
+        android:textSize="16dp" />
+
+</RelativeLayout>

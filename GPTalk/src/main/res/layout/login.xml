@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ivGPTalkTitle"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="75dp"
+        android:src="@drawable/login_gptalk_title" />
+
+    <ImageView
+        android:id="@+id/ivGPTalkConsultation"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/login_gptalk_consultation" />
+
+    <EditText
+        android:id="@+id/etLoginUsername"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_login_edittext"
+        android:ems="10"
+        android:textColor="@color/normalTextColor"
+        android:hint="Username"
+        android:paddingLeft="10dp"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_login_edittext"
+        android:ems="10"
+        android:textColor="@color/normalTextColor"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="Sign Up For GP Talk"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/link_text_color"
+            android:onClick="onClick"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

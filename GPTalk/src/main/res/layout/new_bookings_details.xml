@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:id="@+id/fragmentBookingDetails"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Details"
+                    android:textSize="22dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/titleColor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/tvBookingDetailsBasicTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="First Name: "
+                    android:layout_marginTop="60dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsFirstNameTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="60dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_toRightOf="@id/tvBookingDetailsFirstNameTitle"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsFirstName" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="Last Name: "
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvBookingDetailsFirstNameTitle"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsLastNameTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_below="@id/tvBookingDetailsFirstName"
+                    android:layout_toRightOf="@id/tvBookingDetailsLastNameTitle"
+                    android:layout_marginLeft="23dp"
+                    android:id="@+id/tvBookingDetailsLastName" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="D.O.B.: "
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvBookingDetailsLastNameTitle"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsDOBTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_below="@id/tvBookingDetailsLastName"
+                    android:layout_toRightOf="@id/tvBookingDetailsDOBTitle"
+                    android:layout_marginLeft="55dp"
+                    android:id="@+id/tvBookingDetailsDOBDay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="normal"
+                    android:text="/"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_below="@id/tvBookingDetailsLastName"
+                    android:layout_toRightOf="@id/tvBookingDetailsDOBDay"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/tvBookingDetailsDOBSlash1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_below="@id/tvBookingDetailsLastName"
+                    android:layout_toRightOf="@id/tvBookingDetailsDOBDay"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsDOBMonth" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="normal"
+                    android:text="/"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_below="@id/tvBookingDetailsLastName"
+                    android:layout_toRightOf="@id/tvBookingDetailsDOBMonth"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/tvBookingDetailsDOBSlash2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_below="@id/tvBookingDetailsLastName"
+                    android:layout_toRightOf="@id/tvBookingDetailsDOBMonth"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsDOBYear" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="Gender: "
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvBookingDetailsDOBTitle"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsGenderTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_below="@id/tvBookingDetailsDOBTitle"
+                    android:layout_toRightOf="@id/tvBookingDetailsGenderTitle"
+                    android:layout_marginLeft="52dp"
+                    android:id="@+id/tvBookingDetailsGender" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="Nationality: "
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvBookingDetailsGenderTitle"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsNationalityTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_below="@id/tvBookingDetailsGenderTitle"
+                    android:layout_toRightOf="@id/tvBookingDetailsNationalityTitle"
+                    android:layout_marginLeft="23dp"
+                    android:id="@+id/tvBookingDetailsNationality" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="#ff9c9c9c"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/vBookingDetailLine1"
+                    android:layout_below="@+id/tvBookingDetailsNationalityTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Symptom and Allergy Details"
+                    android:textSize="22dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/titleColor"
+                    android:layout_below="@id/vBookingDetailLine1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/tvBookingDetailsSymptomDetailTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="Symptom: "
+                    android:layout_below="@id/tvBookingDetailsSymptomDetailTitle"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsSymptomTitle" />
+
+                <Spinner
+                    android:id="@+id/sBookingDetailsSymptomType"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/rounded_booking_edittext"
+                    android:entries="@array/patient_symptoms"
+                    android:prompt="@string/symptoms_prompt"
+                    android:layout_below="@id/tvBookingDetailsSymptomDetailTitle"
+                    android:layout_toRightOf="@id/tvBookingDetailsSymptomTitle"
+                    android:paddingLeft="5dp"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="Other\nSymptoms: "
+                    android:layout_below="@id/tvBookingDetailsSymptomTitle"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsOtherSymptomTitle" />
+
+                <EditText
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxLines="4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Separate by comma"
+                    android:padding="5dp"
+                    android:background="@drawable/rounded_booking_edittext"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:scrollbars="vertical"
+                    android:layout_below="@id/sBookingDetailsSymptomType"
+                    android:layout_toRightOf="@id/tvBookingDetailsOtherSymptomTitle"
+                    android:id="@+id/etBookingDetailsOtherSymptoms" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="Allergies: "
+                    android:layout_below="@id/tvBookingDetailsOtherSymptomTitle"
+                    android:layout_marginTop="70dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsAllergiesTitle" />
+
+                <Spinner
+                    android:id="@+id/sBookingDetailsAllergiesType"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/rounded_booking_edittext"
+                    android:entries="@array/patient_allergies"
+                    android:prompt="@string/allergies_prompt"
+                    android:layout_below="@id/etBookingDetailsOtherSymptoms"
+                    android:layout_toRightOf="@id/tvBookingDetailsSymptomTitle"
+                    android:paddingLeft="5dp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="Other\nAllergies: "
+                    android:layout_below="@id/tvBookingDetailsAllergiesTitle"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsOtherAllergiesTitle" />
+
+                <EditText
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxLines="4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Separate by comma"
+                    android:padding="5dp"
+                    android:textColor="@color/normalTextColor"
+                    android:background="@drawable/rounded_booking_edittext"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:scrollbars="vertical"
+                    android:layout_below="@id/sBookingDetailsAllergiesType"
+                    android:layout_toRightOf="@id/tvBookingDetailsOtherSymptomTitle"
+                    android:id="@+id/etBookingDetailsOtherAllergies" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="#ff9c9c9c"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/vBookingDetailLine2"
+                    android:layout_below="@+id/etBookingDetailsOtherAllergies" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consultation Details"
+                    android:textSize="22dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/titleColor"
+                    android:layout_below="@id/vBookingDetailLine2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/tvBookingDetailsConsultationTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="GP: "
+                    android:layout_below="@id/tvBookingDetailsConsultationTitle"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsGPTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_below="@id/tvBookingDetailsConsultationTitle"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_toRightOf="@id/tvBookingDetailsGPTitle"
+                    android:id="@+id/tvBookingDetailsGPNameTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_below="@id/tvBookingDetailsConsultationTitle"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_toRightOf="@id/tvBookingDetailsGPNameTitle"
+                    android:id="@+id/tvBookingDetailsGPFirstName" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_below="@id/tvBookingDetailsConsultationTitle"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tvBookingDetailsGPFirstName"
+                    android:id="@+id/tvBookingDetailsGPLastName" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="Cost: "
+                    android:layout_below="@id/tvBookingDetailsGPTitle"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsConsultationCostTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_below="@id/tvBookingDetailsGPTitle"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_toRightOf="@id/tvBookingDetailsConsultationCostTitle"
+                    android:id="@+id/tvBookingDetailsConsultationCost" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:text="Time: "
+                android:layout_below="@id/tvBookingDetailsConsultationCostTitle"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/normalTextColor"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tvBookingDetailsTimeTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:layout_below="@id/tvBookingDetailsConsultationCostTitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/textviewClickColor"
+                android:layout_toRightOf="@id/tvBookingDetailsTimeTitle"
+                android:id="@+id/tvBookingDetailsTime"
+                android:clickable="true" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:text="Date: "
+                    android:layout_below="@id/tvBookingDetailsTimeTitle"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/normalTextColor"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvBookingDetailsDateTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_below="@id/tvBookingDetailsTime"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="23dp"
+                    android:textColor="@color/textviewClickColor"
+                    android:layout_toRightOf="@id/tvBookingDetailsDateTitle"
+                    android:id="@+id/tvBookingDetailsDate"
+                    android:clickable="true"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bMakeRequest"
+                    android:layout_below="@id/tvBookingDetailsTime"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Send Request"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/confirm_button_style" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

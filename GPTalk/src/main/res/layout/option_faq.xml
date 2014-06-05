@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundSliderFragment"
+    android:orientation="vertical" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAQ"
+            android:textSize="33dp"
+            android:textStyle="bold"
+            android:textColor="@color/sliderTextColor"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tvFAQTitle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Booking"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:textColor="@color/sliderTextColor"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvFAQBookingTitle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When can I make a booking?"
+            android:textSize="22dp"
+            android:textStyle="normal"
+            android:textColor="@color/sliderTextColor"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvFAQBookingQuestion1" />
+
+        <WebView
+            android:id="@+id/tvFAQBookingAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When do I receive a reply?"
+            android:textSize="22dp"
+            android:textStyle="normal"
+            android:textColor="@color/sliderTextColor"
+            android:gravity="left"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvFAQBookingQuestion2" />
+
+        <WebView
+            android:id="@+id/tvFAQBookingAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelling a Booking"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:textColor="@color/sliderTextColor"
+            android:gravity="left"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvFAQCancelTitle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How do I cancel a booking?"
+            android:textSize="22dp"
+            android:textStyle="normal"
+            android:textColor="@color/sliderTextColor"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvFAQCancelQuestion" />
+
+        <WebView
+            android:id="@+id/tvFAQCancelBookingAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Changing Account Details"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:textColor="@color/sliderTextColor"
+            android:gravity="left"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvFAQAccountDetailsTitle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How do I change my account details?"
+            android:textSize="22dp"
+            android:textStyle="normal"
+            android:textColor="@color/sliderTextColor"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tvFAQAccountDetailsQuestion" />
+
+        <WebView
+            android:id="@+id/tvFAQAccountDetailsAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

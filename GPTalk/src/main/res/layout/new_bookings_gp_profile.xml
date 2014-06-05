@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:id="@+id/fragmentBookingGPProfile"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginBottom="60dp"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="32dp"
+                        android:padding="1dp"
+                        android:id="@+id/ivGPProfilePhoto" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="33dp"
+                        android:textColor="@color/normalTextColor"
+                        android:layout_toRightOf="@id/ivGPProfilePhoto"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/tvGPProfileTitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="33dp"
+                        android:textColor="@color/normalTextColor"
+                        android:layout_toRightOf="@id/tvGPProfileTitle"
+                        android:layout_marginLeft="7dp"
+                        android:id="@+id/tvGPProfileFirstName" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="33dp"
+                        android:textColor="@color/normalTextColor"
+                        android:layout_toRightOf="@id/tvGPProfileFirstName"
+                        android:layout_marginLeft="7dp"
+                        android:id="@+id/tvGPProfileLastName" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address:"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/normalTextColor"
+                        android:gravity="left"
+                        android:layout_marginTop="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/tvGPProfileAddressTitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="133dp"
+                        android:textColor="@color/normalTextColor"
+                        android:layout_toRightOf="@id/tvGPProfileAddressTitle"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tvGPProfileAddress" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/normalTextColor"
+                        android:layout_toRightOf="@id/tvGPProfileAddressTitle"
+                        android:layout_below="@id/tvGPProfileAddress"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tvGPProfileCity" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/normalTextColor"
+                        android:layout_toRightOf="@id/tvGPProfileAddressTitle"
+                        android:layout_below="@id/tvGPProfileCity"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tvGPProfileCounty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/normalTextColor"
+                        android:layout_toRightOf="@id/tvGPProfileCounty"
+                        android:layout_below="@id/tvGPProfileCity"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tvGPProfilePostCode" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Website:"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/normalTextColor"
+                        android:gravity="left"
+                        android:layout_marginTop="230dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/tvGPProfileWebsiteTitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="italic"
+                        android:layout_marginTop="233dp"
+                        android:textColor="@color/textviewClickColor"
+                        android:layout_toRightOf="@id/tvGPProfileWebsiteTitle"
+                        android:layout_marginLeft="32dp"
+                        android:id="@+id/tvGPProfileWebsite" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number:"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/normalTextColor"
+                        android:gravity="left"
+                        android:layout_marginTop="270dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/tvGPProfilePhoneNumberTitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="italic"
+                        android:layout_marginTop="273dp"
+                        android:textColor="@color/textviewClickColor"
+                        android:layout_toRightOf="@id/tvGPProfilePhoneNumberTitle"
+                        android:layout_marginLeft="32dp"
+                        android:id="@+id/tvGPProfilePhoneNumber"
+                        android:onClick="onClick"
+                        android:clickable="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consultation Cost:"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/normalTextColor"
+                        android:gravity="left"
+                        android:layout_marginTop="310dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/tvGPProfileConsultationCostTitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="313dp"
+                        android:textColor="@color/normalTextColor"
+                        android:layout_toRightOf="@id/tvGPProfileConsultationCostTitle"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/tvGPProfileConsultationCost" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Make Booking"
+                        android:layout_marginTop="370dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="100dp"
+                        android:id="@+id/bMakeBooking"
+                        android:background="@drawable/account_button_style" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

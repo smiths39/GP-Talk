@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gpScheduleListConsultationDetails"
+    android:layout_width="fill_parent"
+    android:background="@drawable/main_background"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Reply"
+        android:textSize="30dp"
+        android:textStyle="normal"
+        android:textColor="@color/titleColor"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvBookingReplyTitle" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_consultation_background"
+            android:layout_marginTop="120dp"
+            android:layout_height="160dp"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your request was"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/normalTextColor"
+                android:gravity="center"
+                android:padding="5dp"
+                android:id="@+id/tvGPReplyMessage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="27dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/normalTextColor"
+                android:id="@+id/tvGPReplyStatus" />
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/bOKReply"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/table_layout"
+            android:layout_marginTop="20dp"
+            android:text="OK" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

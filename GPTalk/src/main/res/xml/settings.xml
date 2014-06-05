@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/preference_account" >
+
+        <PreferenceScreen
+            android:title="@string/preference_account_sign_out">
+
+            <intent
+                android:action="com.app.gptalk.main.LOGIN"/>
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_settings" >
+
+        <PreferenceScreen
+            android:title="@string/preference_about">
+
+            <intent
+                android:action="com.app.gptalk.option.OPTIONSETTINGSABOUT"/>
+
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:title="@string/preference_music"
+            android:defaultValue="true"
+            android:key="checkbox"
+            android:summary="@string/preference_music_description" />
+
+        <PreferenceScreen
+            android:title="@string/preference_email"
+            android:summary="@string/preference_feedback" >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="mailto:gptalk2014@gmail.com">
+
+                <extra
+                    android:name="android.intent.extra.SUBJECT"
+                    android:value="Application Feedback" />
+
+            </intent>
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_get_social" >
+
+        <Preference
+            android:title="@string/preference_facebook"
+            android:key="preference_facebook_like"
+            android:summary="@string/preference_like_us"
+            >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.facebook.com/gptalk2014" />
+
+        </Preference>
+
+        <Preference
+            android:title="@string/preference_twitter"
+            android:key="preference_twitter_follow"
+            android:summary="@string/preference_follow_us">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://twitter.com/GPTalk2014" />
+
+        </Preference>
+
+        <Preference
+            android:title="@string/preference_linkedin"
+            android:key="preference_linkedin_follow"
+            android:summary="@string/preference_follow_us">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.linkedin.com/company/gp-talk" />
+
+        </Preference>
+
+        <Preference
+            android:title="@string/preference_google_plus"
+            android:key="preference_google_plus_follow"
+            android:summary="@string/preference_follow_us">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.google.com/+GptalkIe2014" />
+
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

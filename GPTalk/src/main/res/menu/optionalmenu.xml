@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:icon="@drawable/action_bar_profile"
+        android:showAsAction="always"
+        android:id="@+id/optionLaunch">
+
+        <menu>
+
+            <item
+                android:title="Home"
+                android:id="@+id/optionHome" />
+
+            <item
+                android:title="Account"
+                android:id="@+id/optionAccount" />
+
+            <item
+                android:title="FAQ"
+                android:id="@+id/optionFAQ" />
+
+            <item
+                android:title="Support"
+                android:id="@+id/optionSupport" />
+
+            <item
+                android:title="Settings"
+                android:id="@+id/optionSettings" />
+
+            <item
+                android:title="Website"
+                android:id="@+id/optionWebsite" />
+
+            <item
+                android:title="Sign Out"
+                android:id="@+id/exit" />
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:id="@+id/fragmentBooking"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <TextView
+        android:id="@+id/tvCountyLocationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/titleColor"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#ff9c9c9c"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/vCurrentLocation"
+        android:layout_below="@id/tvCountyLocationTitle" />
+
+    <TextView
+        android:id="@+id/tvCountyCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vCurrentLocation"
+        android:textSize="17dp"
+        android:textColor="@color/normalTextColor"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vCurrentLocation"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/gps_icon"/>
+
+    <TextView
+        android:id="@+id/tvCountyListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Counties"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/titleColor"
+        android:layout_below="@+id/tvCountyCurrentLocation"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#ff9c9c9c"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/vCountyList"
+        android:layout_below="@id/tvCountyListTitle" />
+
+    <ListView
+        android:id="@+id/lvCountyGP"
+        android:layout_below="@id/vCountyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/dividerColor"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+</RelativeLayout>
+

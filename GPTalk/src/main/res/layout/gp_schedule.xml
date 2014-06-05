@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:id="@+id/fragmentGPScheduleConsultation"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_background"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvConsultationsNotConfirmedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unconfirmed"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/titleColor"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#ff9c9c9c"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/vNotConfirmed"
+                android:layout_below="@id/tvConsultationsNotConfirmedTitle" />
+
+            <ExpandableListView
+                android:id="@+id/lvConsultationsNotConfirmed"
+                android:layout_below="@id/vNotConfirmed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:groupIndicator="@null"
+                android:textColor="@color/normalTextColor"
+                android:layout_weight="0.33"
+                android:listSelector="@color/listviewHightlight"
+                android:drawSelectorOnTop="false" />
+
+            <TextView
+                android:id="@+id/tvConsultationsConfirmedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/titleColor"
+                android:layout_below="@+id/lvConsultationsNotConfirmed"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="15dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#ff9c9c9c"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/vConfirmed"
+                android:layout_below="@id/tvConsultationsConfirmedTitle" />
+
+            <ExpandableListView
+                android:id="@+id/lvConsultationsConfirmed"
+                android:layout_below="@id/vConfirmed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:groupIndicator="@null"
+                android:listSelector="@color/listviewHightlight"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/normalTextColor"
+                android:layout_weight="0.33"
+                android:drawSelectorOnTop="false" />
+
+            <TextView
+                android:id="@+id/tvConsultationsRejectedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rejected"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/titleColor"
+                android:layout_below="@+id/lvConsultationsConfirmed"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="15dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#ff9c9c9c"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/vRejected"
+                android:layout_below="@id/tvConsultationsRejectedTitle" />
+
+            <ExpandableListView
+                android:id="@+id/lvConsultationsRejected"
+                android:layout_below="@id/vRejected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:groupIndicator="@null"
+                android:listSelector="@color/listviewHightlight"
+                android:textColor="@color/normalTextColor"
+                android:layout_weight="0.33"
+                android:drawSelectorOnTop="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

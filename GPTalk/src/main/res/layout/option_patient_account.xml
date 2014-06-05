@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Profile"
+                android:textSize="30dp"
+                android:textStyle="normal"
+                android:textColor="@color/titleColor"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tvAccountTitle" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Profile"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvProfileTitle" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/ivProfilePhoto" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Username"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                             android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvUsernameTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                             android:textColor="@color/normalTextColor"
+                            android:id="@+id/tvUsernamePatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="First Name"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                             android:textColor="@color/normalTextColor"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:gravity="left"
+                            android:id="@+id/tvFirstNameTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                             android:textColor="@color/normalTextColor"
+                            android:id="@+id/tvFirstNamePatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Last Name"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                             android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvLastNameTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                             android:textColor="@color/normalTextColor"
+                            android:id="@+id/tvLastNamePatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:text="Email"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                             android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvEmailTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                             android:textColor="@color/normalTextColor"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvEmailPatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="D.O.B."
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                             android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvDOBTitle" />
+
+                            <TableRow
+                                android:id="@+id/tableRow6"
+                                android:background="@drawable/cell_shape"
+                                android:padding="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textSize="19dp"
+                                    android:textStyle="normal"
+                                     android:textColor="@color/normalTextColor"
+                                    android:id="@+id/tvDOBDayPatient" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textSize="19dp"
+                                    android:text="/"
+                                    android:textStyle="normal"
+                                     android:textColor="@color/normalTextColor"
+                                    android:id="@+id/tvDOBSlash1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textSize="19dp"
+                                    android:textStyle="normal"
+                                     android:textColor="@color/normalTextColor"
+                                    android:id="@+id/tvDOBMonthPatient" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textSize="19dp"
+                                    android:text="/"
+                                    android:textStyle="normal"
+                                     android:textColor="@color/normalTextColor"
+                                    android:id="@+id/tvDOBSlash2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textSize="19dp"
+                                    android:textStyle="normal"
+                                     android:textColor="@color/normalTextColor"
+                                    android:layout_toRightOf="@id/tvDOBSlash2"
+                                    android:id="@+id/tvDOBYearPatient" />
+
+                            </TableRow>
+
+                        </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Gender"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                             android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvGenderTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                             android:textColor="@color/normalTextColor"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvGenderPatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Nationality"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                             android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvNationalityTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                             android:textColor="@color/normalTextColor"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvNationalityPatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="County"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                             android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvCountyTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                             android:textColor="@color/normalTextColor"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:id="@+id/tvCountyPatient" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Settings"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/bProfileSettings"
+                android:background="@drawable/account_button_style"
+                android:layout_gravity="center_vertical|center_horizontal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

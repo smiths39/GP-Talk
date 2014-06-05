@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tvGPAvailableTimeListTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/normalTextColor"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/tvGPAvailableTimeListStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/normalTextColor"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GPTalk/GPTalk.iml" filepath="$PROJECT_DIR$/GPTalk/GPTalk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GPTalkProject.iml" filepath="$PROJECT_DIR$/GPTalkProject.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gpScheduleListConsultationDetails"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_background"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultation Cancelled"
+                android:textSize="30dp"
+                android:textStyle="normal"
+                android:textColor="@color/titleColor"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tvDeleteBookingGPTitle" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table_layout_top"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="18dp"
+                            android:textStyle="normal"
+                            android:textColor="@color/normalTextColor"
+                            android:id="@+id/tvDeletePatientCompleteName" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+                <TableLayout
+                    android:id="@+id/table_layout_details"
+                    android:layout_below="@id/table_layout_top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_consultation_background"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent">
+
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:text="Booking\nDate:"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:id="@+id/tvDeleteGPBookingDateTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="18dp"
+                            android:textStyle="italic"
+                            android:textColor="@color/textviewClickColor"
+                            android:padding="5dp"
+                            android:id="@+id/tvDeleteGPBookingDate" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow9"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:text="Booking\nTime:"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:id="@+id/tvDeleteGPBookingTimeTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="18dp"
+                            android:textStyle="italic"
+                            android:textColor="@color/textviewClickColor"
+                            android:padding="5dp"
+                            android:id="@+id/tvDeleteGPBookingTime" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/table_layout2"
+                    android:layout_below="@id/table_layout_details"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_change_details_background"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent">
+
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:text="Explanation:"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:id="@+id/tvDeleteGPExplanationTitle" />
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="18dp"
+                            android:textStyle="italic"
+                            android:textColor="@color/textviewClickColor"
+                            android:padding="5dp"
+                            android:id="@+id/tvDeleteGPExplanation" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="40dp"
+                    android:id="@+id/bDeleteGPOK"
+                    android:text="Ok"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/confirm_button_style"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_dialog_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvCustomDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:text="Change Consultation"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCustomDialogTitle"
+        android:layout_alignParentLeft="true"
+        android:text="Status:"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvCustomDialogStatusTitle"/>
+
+    <TextView
+        android:id="@+id/tvCustomDialogStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="67dp"
+        android:layout_below="@id/tvCustomDialogTitle"
+        android:layout_toRightOf="@id/tvCustomDialogStatusTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCustomDialogStatus"
+        android:layout_alignParentLeft="true"
+        android:text="Booking Date:"
+        android:id="@+id/tvCustomDialogBookingDateTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCustomDialogStatus"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@id/tvCustomDialogBookingDateTitle"
+        android:id="@+id/tvCustomDialogBookingDate"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCustomDialogBookingDateTitle"
+        android:layout_alignParentLeft="true"
+        android:text="Booking Time:"
+        android:id="@+id/tvCustomDialogBookingTimeTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCustomDialogBookingDate"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvCustomDialogBookingTimeTitle"
+        android:id="@+id/tvCustomDialogBookingTime"
+        android:clickable="true"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Reason for cancellation..."
+        android:id="@+id/etCustomDialogExplanation"
+        android:layout_below="@id/tvCustomDialogBookingTimeTitle"
+        android:background="@drawable/rounded_login_edittext" />
+
+    <Button
+        android:id="@+id/btnSendCancellation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/etCustomDialogExplanation"
+        android:layout_marginLeft="70dp"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/btnCancelCancellation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/etCustomDialogExplanation"
+        android:layout_toRightOf="@id/btnSendCancellation"
+        android:layout_marginLeft="60dp"
+        android:text="Cancel" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCustomDialogExplanation"
+        android:layout_toRightOf="@id/btnSendCancellation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile Settings"
+                android:textSize="30dp"
+                android:textStyle="normal"
+                android:textColor="@color/titleColor"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tvAccountTitle" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table_layout"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Username"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:paddingLeft="5dp"
+                            android:background="@drawable/cell_shape"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="20dp"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:id="@+id/tvNewUsernameTitle" />
+
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                            android:textColor="#000000"
+                            android:background="@drawable/cell_shape"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="20dp"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:id="@+id/etNewUsernamePatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="First Name"
+                            android:background="@drawable/cell_shape"
+                            android:textSize="19dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:id="@+id/tvNewFirstNameTitle" />
+
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="20dp"
+                            android:textColor="#000000"
+                            android:singleLine="true"
+                            android:imeOptions="actionNext"
+                            android:background="@drawable/cell_shape"
+                            android:id="@+id/etNewFirstNamePatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Last Name"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="20dp"
+                            android:id="@+id/tvNewLastNameTitle" />
+
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textColor="#000000"
+                            android:singleLine="true"
+                            android:textStyle="normal"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="20dp"
+                            android:imeOptions="actionNext"
+                            android:background="@drawable/cell_shape"
+                            android:id="@+id/etNewLastNamePatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="left"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="20dp"
+                            android:id="@+id/tvNewEmailTitle" />
+
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="19dp"
+                            android:textStyle="normal"
+                            android:textColor="#000000"
+                            android:singleLine="true"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="20dp"
+                            android:background="@drawable/cell_shape"
+                            android:imeOptions="actionNext"
+                            android:id="@+id/etNewEmailPatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D.O.B."
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:background="@drawable/cell_shape"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="20dp"
+                            android:id="@+id/tvNewDOBTitle" />
+
+                        <TableRow
+                            android:id="@+id/tableRowSub"
+                            android:background="@drawable/cell_shape"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Spinner
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:entries="@array/registration_day"
+                                android:prompt="@string/registration_day_prompt"
+                                android:spinnerMode="dropdown"
+                                android:background="@drawable/option_settings_cell_shape"
+                                android:id="@+id/etNewDOBDayPatient" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19dp"
+                                android:text="/"
+                                android:textStyle="normal"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/normalTextColor"
+                                android:id="@+id/tvDOBSlash1" />
+
+                            <Spinner
+                                android:layout_width="45dp"
+                                android:layout_height="match_parent"
+                                android:entries="@array/registration_month"
+                                android:prompt="@string/registration_month_prompt"
+                                android:spinnerMode="dropdown"
+                                android:background="@drawable/option_settings_cell_shape"
+                                android:id="@+id/etNewDOBMonthPatient" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19dp"
+                                android:text="/"
+                                android:textStyle="normal"
+                                android:textColor="@color/normalTextColor"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:paddingRight="5dp"
+                                android:id="@+id/tvDOBSlash2" />
+
+                            <Spinner
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:entries="@array/registration_year"
+                                android:prompt="@string/registration_year_prompt"
+                                android:spinnerMode="dropdown"
+                                android:background="@drawable/option_settings_cell_shape"
+                                android:id="@+id/etNewDOBYearPatient" />
+
+
+                        </TableRow>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:paddingLeft="5dp"
+                            android:background="@drawable/cell_shape"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="5dp"
+                            android:id="@+id/tvNewGenderTitle" />
+
+                        <Spinner
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:entries="@array/registration_gender"
+                            android:prompt="@string/registration_gender_prompt"
+                            android:spinnerMode="dropdown"
+                            android:background="@drawable/option_settings_cell_shape"
+                            android:id="@+id/etNewGenderPatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nationality"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@drawable/cell_shape"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="5dp"
+                            android:id="@+id/tvNewNationalityTitle" />
+
+                        <Spinner
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:entries="@array/registration_nationality"
+                            android:prompt="@string/registration_nationality_prompt"
+                            android:spinnerMode="dropdown"
+                            android:background="@drawable/option_settings_cell_shape"
+                            android:id="@+id/etNewNationalityPatient" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="County"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/normalTextColor"
+                            android:gravity="left"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/cell_shape"
+                            android:id="@+id/tvNewCountyTitle" />
+
+                        <Spinner
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:entries="@array/registration_county"
+                            android:prompt="@string/registration_county_prompt"
+                            android:spinnerMode="dropdown"
+                            android:background="@drawable/option_settings_cell_shape"
+                            android:id="@+id/etNewCountyPatient" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Settings"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/bSaveProfileSettings"
+                android:background="@drawable/confirm_button_style"
+                android:layout_gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

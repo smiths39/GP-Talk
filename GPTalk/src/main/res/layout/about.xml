@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/ivGPTalkLogo"
+        android:src="@drawable/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GP Talk"
+        android:textColor="@color/aboutColor"
+        android:textSize="100px"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/ivGPTalkLogo"
+        android:layout_marginTop="20px"
+        android:id="@+id/tvAppTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
+        android:textColor="@color/aboutColor"
+        android:textSize="70px"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tvAppTitle"
+        android:layout_centerInParent="true"
+        android:id="@+id/tvVersion" />
+
+</RelativeLayout>

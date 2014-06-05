@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:id="@+id/fragmentScheduleHistoryGP"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <TextView
+        android:id="@+id/tvGPHistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/titleColor"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#ff9c9c9c"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/vHistoryList"
+        android:layout_below="@id/tvGPHistoryTitle" />
+
+    <ListView
+        android:id="@+id/lvGPHistoryScheduleList"
+        android:layout_below="@id/vHistoryList"
+        android:layout_width="match_parent"
+        android:dividerHeight="2px"
+        android:divider="#ffe4e4e4"
+        android:listSelector="@color/listviewHightlight"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+</RelativeLayout>

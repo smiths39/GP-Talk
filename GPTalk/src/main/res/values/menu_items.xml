@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_items">
+        <item>Profile</item>
+        <item>Help/Faq</item>
+        <item>Support</item>
+        <item>Social Website</item>
+    </string-array>
+</resources>
