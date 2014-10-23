@@ -1,3 +1,8 @@
+[PROJECT DISCONTINUED]
+GP-Talk has been perminately discontinued as its implementation was for university project demonstration purposes only. Should permission and / or interest from the HSE arise, the application will be relaunched a new live server, as the one previously used is no longer activated.
+
+Please feel free to examine code.
+
 GP-Talk
 =======
 
